@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find helpful apps for students studying abroad, including food delivery, money management, communication, and everyday student life in Europe.">
+  <title>Apps for Students Studying Abroad | ELSEWHERE</title>
+  <style>
+    :root { --cream:#f6f3ec; --ink:#26352e; --sand:#e7dfd0; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:Arial,sans-serif; line-height:1.7; }
+    .notice { background:var(--ink); color:white; text-align:center; padding:12px 18px; font-size:12px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 7%; border-bottom:1px solid #ddd7cc; }
+    .logo { font-size:25px; font-weight:900; letter-spacing:3px; text-decoration:none; color:var(--ink); }
+    nav { display:flex; gap:18px; flex-wrap:wrap; }
+    nav a { color:var(--ink); text-decoration:none; font-size:13px; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:1100px; margin:auto; padding:65px 7%; }
+    .eyebrow { font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold; }
+    h1 { font-family:Georgia,serif; font-size:clamp(42px,7vw,78px); line-height:1.1; }
+    h2 { font-family:Georgia,serif; font-size:35px; }
+    .intro { font-size:19px; max-width:750px; }
+    .feature { padding:30px 0; border-bottom:1px solid #d6d0c5; }
+    .feature h3 { font-size:24px; }
+    .tag { display:inline-block; background:var(--sand); padding:5px 12px; font-size:12px; border-radius:20px; }
+    .tip { background:var(--sand); padding:30px; margin:40px 0; }
+    .button { display:inline-block; background:var(--ink); color:white; text-decoration:none; padding:14px 25px; margin-top:15px; }
+    footer { background:var(--ink); color:white; text-align:center; padding:40px 7%; }
+    footer a { color:white; margin:0 9px; }
+    footer .notice { margin-top:25px; border-top:1px solid #718075; }
+    @media(max-width:700px) {
+      header { flex-direction:column; text-align:center; }
+      nav { justify-content:center; }
+      main { padding:45px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  <header>
+    <a class="logo" href="index.html">ELSEWHERE.</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="study-abroad-apps.html">Study Abroad Apps</a>
+      <a href="europe-travel-apps.html">Travel Toolkit</a>
+      <a href="student-apps.html">Student Guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">The ELSEWHERE guide / 03</div>
+    <h1>Apps for Students Studying Abroad</h1>
+    <p class="intro">New city. New friends. New routines. These student-friendly apps help make everyday life in Europe feel a little more familiar.</p>
+
+    <h2>Live like a local, wherever you land.</h2>
+    <p>Studying abroad isn't just about weekend trips. It's also about finding your favorite coffee shop, navigating grocery stores, managing your budget, and building a daily routine in a new country. Here are useful apps to keep on your phone throughout the semester.</p>
+
+    <div class="feature">
+      <span class="tag">Food delivery</span>
+      <h3>01. Deliveroo — Discover local food</h3>
+      <p>Deliveroo connects customers with participating restaurants and food retailers in supported locations. It's helpful when you're busy studying or want to discover different food options near your accommodation.</p>
+      <p><strong>Student tip:</strong> Compare delivery fees and consider pickup when available to manage costs.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Food and groceries</span>
+      <h3>02. Glovo — Everyday convenience</h3>
+      <p>Glovo provides delivery services in participating markets, including options for meals and selected everyday essentials.</p>
+      <p><strong>Student tip:</strong> Check whether the service operates in your host city before downloading it.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Saving money</span>
+      <h3>03. Too Good To Go — Save food and money</h3>
+      <p>Too Good To Go helps customers purchase surplus food from participating businesses at reduced prices. It's an interesting way to try local food while helping reduce waste.</p>
+      <p><strong>Student tip:</strong> Check collection times carefully, especially when you have classes or other commitments.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Restaurants</span>
+      <h3>04. OpenTable — Plan a night out</h3>
+      <p>OpenTable lets users discover restaurants and make reservations in supported locations. It can be useful when organizing dinners with classmates or planning a special evening.</p>
+      <p><strong>Student tip:</strong> Check restaurant menus and prices before reserving.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Money management</span>
+      <h3>05. Wise — Understand international spending</h3>
+      <p>Wise offers international money services, including currency conversion and transfers. Available features depend on your location and account eligibility.</p>
+      <p><strong>Student tip:</strong> Review conversion rates, transaction fees, and your bank's international policies before making payments.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Language</span>
+      <h3>06. Google Translate — Bridge the language gap</h3>
+      <p>Google Translate can help with unfamiliar words, signs, menus, and everyday conversations. Its supported camera and offline language features can be especially useful while traveling.</p>
+      <p><strong>Student tip:</strong> Learn a few basic phrases in your host country's language. Even small efforts can make interactions more meaningful.</p>
+    </div>
+
+    <div class="tip">
+      <div class="eyebrow">The ELSEWHERE mindset</div>
+      <h2>Don't just visit. Experience.</h2>
+      <p>Try the neighborhood bakery. Take the longer walk home. Ask someone about their favorite local spot. The apps on your phone should make exploring easier, not replace the experience of discovering a place for yourself.</p>
+    </div>
+
+    <h2>Your semester, your story.</h2>
+    <p>From the first grocery run to your final weekend getaway, the little moments become part of your experience abroad. Keep track of where you've been and the memories you want to bring home.</p>
+    <a class="button" href="index.html">Return to ELSEWHERE &rarr;</a>
+  </main>
+
+  <footer>
+    <strong>ELSEWHERE.</strong>
+    <p>Go further. Feel more. Remember everything.</p>
+    <a href="index.html">Home</a>
+    <a href="study-abroad-apps.html">Study Abroad Apps</a>
+    <a href="europe-travel-apps.html">Travel Toolkit</a>
+    <a href="student-apps.html">Student Guide</a>
+    <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </footer>
+</body>
+</html>

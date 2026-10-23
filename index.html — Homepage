@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ELSEWHERE is a study abroad travel toolkit and interactive travel journal for college students exploring Europe.">
+  <title>ELSEWHERE | Your Europe Starts Here</title>
+  <style>
+    :root {
+      --green: #254b3b;
+      --cream: #faf7ef;
+      --sage: #e1e9dd;
+      --orange: #c76e42;
+      --ink: #24332b;
+      --muted: #64736a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .notice {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 12px 18px;
+      font-size: 12px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 7%;
+      border-bottom: 1px solid #e1e2d8;
+    }
+    .logo {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-decoration: none;
+      color: var(--green);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    nav a:hover, nav a.active { color: var(--orange); }
+    .hero {
+      padding: 105px 8%;
+      background: linear-gradient(135deg,#e1e9dd,#faf7ef);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(48px,8vw,100px);
+      line-height: 1.05;
+      max-width: 900px;
+      margin: 20px 0;
+      letter-spacing: -3px;
+    }
+    h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px,4vw,45px);
+      line-height: 1.2;
+      color: var(--green);
+    }
+    h3 { color: var(--green); }
+    .hero p {
+      max-width: 600px;
+      font-size: 19px;
+      color: var(--muted);
+    }
+    .button {
+      display: inline-block;
+      padding: 13px 23px;
+      margin: 12px 10px 0 0;
+      border-radius: 5px;
+      background: var(--green);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+    section { padding: 65px 8%; }
+    .intro { max-width: 800px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border: 1px solid #e5e6df;
+      border-radius: 12px;
+    }
+    .card .number {
+      color: var(--orange);
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .card p { color: var(--muted); }
+    .card a { color: var(--orange); font-weight: bold; }
+    .journal { background: var(--sage); }
+    .journal-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+    .map-panel {
+      background: #f8fbf7;
+      padding: 18px;
+      border-radius: 14px;
+    }
+    .map-panel svg { width: 100%; height: auto; }
+    .map-pin {
+      cursor: pointer;
+      outline: none;
+    }
+    .map-pin circle {
+      fill: var(--orange);
+      stroke: white;
+      stroke-width: 2;
+    }
+    .map-pin:focus circle,
+    .map-pin:hover circle { fill: var(--green); }
+    .map-pin text {
+      fill: var(--ink);
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .form-panel {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 13px;
+      margin: 15px 0 5px;
+    }
+    input,select,textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd3ca;
+      border-radius: 5px;
+      background: white;
+      font: inherit;
+    }
+    textarea { min-height: 95px; }
+    .entry {
+      background: #f6f8f3;
+      padding: 15px;
+      border-radius: 7px;
+      margin: 12px 0;
+      overflow-wrap: anywhere;
+    }
+    .entry strong { color: var(--green); }
+    .entry button {
+      background: transparent;
+      border: 0;
+      color: #a34b34;
+      cursor: pointer;
+      padding: 6px 0;
+      text-decoration: underline;
+    }
+    .about { background: white; }
+    .about p { max-width: 800px; }
+    footer {
+      background: var(--green);
+      color: white;
+      padding: 35px 8%;
+    }
+    footer a { color: white; }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 15px 0 25px;
+    }
+    .footer-notice {
+      font-size: 12px;
+      border-top: 1px solid #718779;
+      padding-top: 20px;
+    }
+    @media(max-width:750px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav { gap: 12px; }
+      .hero { padding: 65px 7%; }
+      h1 { letter-spacing: -1px; }
+      section { padding: 45px 7%; }
+      .grid,.journal-layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <a class="logo" href="index.html">ELSEWHERE.</a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="best-apps-studying-abroad-europe.html">Study Abroad Apps</a>
+      <a href="best-travel-apps-europe.html">Travel Apps</a>
+      <a href="apps-students-studying-abroad.html">Student Essentials</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">For the curious, the restless, the everywhere-bound</div>
+      <h1>Your world is waiting. Go ELSEWHERE.</h1>
+      <p>One semester. Endless possibilities. Find the apps, resources, and inspiration you need to navigate Europe, travel smarter, and remember every moment.</p>
+      <a class="button" href="#journal">Start Your Travel Journal</a>
+      <a class="button secondary" href="#explore">Explore Travel Resources</a>
+    </div>
+
+    <section>
+      <div class="intro">
+        <div class="eyebrow">A different kind of travel companion</div>
+        <h2>Less figuring it out. More living it.</h2>
+        <p>Studying abroad should be about discovering new places, meeting unforgettable people, and experiencing life beyond what you know. But navigating unfamiliar train systems, booking affordable flights, and finding the right apps can feel overwhelming. ELSEWHERE brings the essentials together, so you can spend less time searching and more time exploring.</p>
+      </div>
+    </section>
+
+    <section id="explore">
+      <div class="eyebrow">Your travel toolkit</div>
+      <h2>Everything you need, all in one place.</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="number">01 / PREPARE</div>
+          <h3>Best Apps for Studying Abroad in Europe</h3>
+          <p>Get ready for your semester with essential apps for staying connected, managing money, and settling into a new city.</p>
+          <a href="best-apps-studying-abroad-europe.html">Explore the guide →</a>
+        </article>
+        <article class="card">
+          <div class="number">02 / EXPLORE</div>
+          <h3>Best Travel Apps for Europe</h3>
+          <p>Discover tools for comparing trains, finding affordable flights, navigating cities, and planning weekend adventures.</p>
+          <a href="best-travel-apps-europe.html">Find your next adventure →</a>
+        </article>
+        <article class="card">
+          <div class="number">03 / THRIVE</div>
+          <h3>Apps for Students Studying Abroad</h3>
+          <p>From budgeting and language barriers to accommodation and everyday routines, make your home away from home easier.</p>
+          <a href="apps-students-studying-abroad.html">See student essentials →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="journal" class="journal">
+      <div class="eyebrow">Collect moments, not just miles</div>
+      <h2>Your Europe, your story.</h2>
+      <p>Every destination has a story worth remembering. Select a destination on the map, add your travel date, and save a memory from your time abroad.</p>
+      <div class="journal-layout">
+        <div class="map-panel">
+          <h3>Explore your map</h3>
+          <p>Tap a destination to add it to your journal. The map is a simplified illustration of Europe, not a navigation map.</p>
+          <svg viewBox="0 0 650 430" role="img" aria-label="Illustrated Europe destination map with selectable city markers">
+            <rect width="650" height="430" rx="12" fill="#dcecf0"/>
+            <path d="M30 85 L95 55 135 72 165 105 145 145 105 160 75 130 30 140Z" fill="#bfd3b8"/>
+            <path d="M175 60 L225 25 270 45 275 95 250 135 280 175 245 205 205 170 190 120Z" fill="#bfd3b8"/>
+            <path d="M155 185 L210 155 270 170 310 145 360 165 390 205 375 250 330 260 305 300 280 285 255 245 210 255 170 225Z" fill="#bfd3b8"/>
+            <path d="M290 45 L345 15 405 30 425 75 390 125 345 145 310 110Z" fill="#bfd3b8"/>
+            <path d="M400 120 L475 90 565 115 625 165 590 225 525 215 470 245 410 210Z" fill="#bfd3b8"/>
+            <path d="M315 275 L345 290 355 330 375 355 365 380 345 345 330 320Z" fill="#bfd3b8"/>
+            <path d="M390 305 L420 325 455 330 480 355 445 375 410 355Z" fill="#bfd3b8"/>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select London" data-city="London">
+              <circle cx="206" cy="165" r="8"/><text x="215" y="155">London</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Paris" data-city="Paris">
+              <circle cx="260" cy="220" r="8"/><text x="230" y="241">Paris</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Amsterdam" data-city="Amsterdam">
+              <circle cx="295" cy="160" r="8"/><text x="300" y="147">Amsterdam</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Berlin" data-city="Berlin">
+              <circle cx="370" cy="165" r="8"/><text x="380" y="153">Berlin</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Barcelona" data-city="Barcelona">
+              <circle cx="205" cy="290" r="8"/><text x="140" y="312">Barcelona</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Florence" data-city="Florence">
+              <circle cx="343" cy="289" r="8"/><text x="350" y="283">Florence</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Rome" data-city="Rome">
+              <circle cx="360" cy="325" r="8"/><text x="370" y="322">Rome</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Prague" data-city="Prague">
+              <circle cx="405" cy="205" r="8"/><text x="415" y="197">Prague</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Vienna" data-city="Vienna">
+              <circle cx="425" cy="247" r="8"/><text x="435" y="240">Vienna</text>
+            </g>
+            <g class="map-pin" tabindex="0" role="button" aria-label="Select Budapest" data-city="Budapest">
+              <circle cx="470" cy="270" r="8"/><text x="480" y="262">Budapest</text>
+            </g>
+          </svg>
+        </div>
+        <div class="form-panel">
+          <h3>Pin a memory</h3>
+          <form id="journalForm">
+            <label for="city">Destination</label>
+            <select id="city" required>
+              <option value="">Choose a city</option>
+              <option>Amsterdam</option><option>Barcelona</option>
+              <option>Berlin</option><option>Budapest</option>
+              <option>Florence</option><option>London</option>
+              <option>Paris</option><option>Prague</option>
+              <option>Rome</option><option>Vienna</option>
+            </select>
+            <label for="date">Date visited</label>
+            <input id="date" type="date" required>
+            <label for="memory">Your memory</label>
+            <textarea id="memory" maxlength="500" placeholder="Describe your favorite moment, a place you discovered, or something you never want to forget." required></textarea>
+            <button class="button" type="submit">Save My Memory</button>
+          </form>
+          <h3>My travel memories</h3>
+          <div id="entries" aria-live="polite"></div>
+          <p id="journalStatus" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="eyebrow">The story behind ELSEWHERE</div>
+      <h2>Made for the first-time explorers.</h2>
+      <p>ELSEWHERE began with a familiar feeling: arriving in Europe for the first time, excited about everything ahead but completely unsure where to begin. Missed trains, expensive last-minute flights, confusing transportation systems, and unfamiliar apps can turn an incredible opportunity into a stressful experience.</p>
+      <p>Our fictional founder, Maya Ellis, imagined a space where students could find the resources she wished she had known about before studying abroad in Florence. ELSEWHERE combines practical travel guidance with a place to capture the experiences that make a semester unforgettable.</p>
+      <p><strong>Our mission:</strong> To empower students studying abroad to navigate unfamiliar places with confidence, discover affordable adventures, and turn every journey into a story worth keeping.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ELSEWHERE.</strong>
+    <p>Go further. Spend smarter. Remember everything.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="best-apps-studying-abroad-europe.html">Study Abroad Apps</a>
+      <a href="best-travel-apps-europe.html">Travel Apps</a>
+      <a href="apps-students-studying-abroad.html">Student Essentials</a>
+    </div>
+    <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("journalForm");
+    const entries = document.getElementById("entries");
+    const status = document.getElementById("journalStatus");
+    const key = "elsewhereTravelJournal";
+    let memories = [];
+
+    try {
+      memories = JSON.parse(localStorage.getItem(key) || "[]");
+      if (!Array.isArray(memories)) memories = [];
+    } catch (error) {
+      memories = [];
+    }
+
+    function saveMemories() {
+      try {
+        localStorage.setItem(key, JSON.stringify(memories));
+        status.textContent = "Your journal is saved in this browser.";
+      } catch (error) {
+        status.textContent = "Browser storage is unavailable. Your entry will remain until this page is refreshed.";
+      }
+    }
+
+    function renderMemories() {
+      entries.replaceChildren();
+      if (memories.length === 0) {
+        entries.textContent = "Your story starts here. Add your first destination!";
+        return;
+      }
+      memories.forEach((item, index) => {
+        const article = document.createElement("div");
+        article.className = "entry";
+        const heading = document.createElement("strong");
+        heading.textContent = item.city + " — " + item.date;
+        const paragraph = document.createElement("p");
+        paragraph.textContent = item.note;
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.textContent = "Remove memory";
+        remove.addEventListener("click", () => {
+          memories.splice(index, 1);
+          saveMemories();
+          renderMemories();
+        });
+        article.append(heading, paragraph, remove);
+        entries.appendChild(article);
+      });
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      memories.unshift({
+        city: document.getElementById("city").value,
+        date: document.getElementById("date").value,
+        note: document.getElementById("memory").value.trim()
+      });
+      saveMemories();
+      renderMemories();
+      form.reset();
+    });
+
+    document.querySelectorAll(".map-pin").forEach(pin => {
+      function selectCity() {
+        document.getElementById("city").value = pin.dataset.city;
+        document.getElementById("date").focus();
+      }
+      pin.addEventListener("click", selectCity);
+      pin.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          selectCity();
+        }
+      });
+    });
+    renderMemories();
+  </script>
+</body>
+</html>

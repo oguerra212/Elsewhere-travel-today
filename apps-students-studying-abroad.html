@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Essential apps for students studying abroad, including budgeting, language learning, communication, food, and everyday life in Europe.">
+  <title>Apps for Students Studying Abroad | ELSEWHERE</title>
+  <style>
+    :root {
+      --green:#254b3b;
+      --cream:#faf7ef;
+      --sage:#e1e9dd;
+      --orange:#c76e42;
+      --ink:#24332b;
+      --muted:#64736a;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--cream);
+      color:var(--ink);
+      line-height:1.7;
+    }
+    .notice {
+      background:var(--green);
+      color:white;
+      text-align:center;
+      font-size:12px;
+      padding:12px 18px;
+    }
+    header {
+      padding:22px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      border-bottom:1px solid #e1e2d8;
+    }
+    .logo {
+      font-size:26px;
+      letter-spacing:3px;
+      font-weight:900;
+      color:var(--green);
+      text-decoration:none;
+    }
+    nav { display:flex;flex-wrap:wrap;gap:18px; }
+    nav a {
+      text-decoration:none;
+      font-size:13px;
+      font-weight:bold;
+      color:var(--ink);
+    }
+    nav a:hover,nav a.active { color:var(--orange); }
+    .hero {
+      padding:90px 8%;
+      background:linear-gradient(135deg,#f3e7d7,#e1e9dd);
+    }
+    .eyebrow {
+      font-size:12px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--orange);
+      font-weight:bold;
+    }
+    h1,h2 { font-family:Georgia,serif;line-height:1.15; }
+    h1 {
+      font-size:clamp(43px,7vw,80px);
+      max-width:900px;
+      margin:20px 0;
+    }
+    h2 { font-size:36px;color:var(--green); }
+    h3 { color:var(--green); }
+    .hero p { font-size:19px;max-width:650px; }
+    section { padding:55px 8%; }
+    .intro { max-width:850px; }
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:22px;
+      margin-top:30px;
+    }
+    .card {
+      background:white;
+      padding:28px;
+      border-radius:12px;
+      border:1px solid #e4e6dc;
+    }
+    .category {
+      color:var(--orange);
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:2px;
+    }
+    .card p { color:var(--muted); }
+    .card a { color:var(--green);font-weight:bold; }
+    .routine { background:var(--sage); }
+    .routine-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:22px;
+      margin-top:25px;
+    }
+    .routine-item {
+      background:white;
+      padding:25px;
+      border-radius:10px;
+    }
+    .routine-item span {
+      color:var(--orange);
+      font-weight:bold;
+      font-size:13px;
+    }
+    .cta { text-align:center; }
+    .button {
+      display:inline-block;
+      background:var(--green);
+      color:white;
+      padding:14px 25px;
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:15px;
+    }
+    footer {
+      background:var(--green);
+      color:white;
+      padding:35px 8%;
+    }
+    footer a { color:white; }
+    .footer-links {
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      margin:15px 0 25px;
+    }
+    .footer-notice {
+      border-top:1px solid #718779;
+      padding-top:20px;
+      font-size:12px;
+    }
+    @media(max-width:750px) {
+      header { flex-direction:column;align-items:flex-start; }
+      nav { gap:12px; }
+      .hero { padding:60px 7%; }
+      section { padding:45px 7%; }
+      .grid,.routine-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <a href="index.html" class="logo">ELSEWHERE.</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="best-apps-studying-abroad-europe.html">Study Abroad Apps</a>
+      <a href="best-travel-apps-europe.html">Travel Apps</a>
+      <a class="active" href="apps-students-studying-abroad.html">Student Essentials</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Life abroad, made easier</div>
+      <h1>Apps for Students Studying Abroad</h1>
+      <p>Because studying abroad is more than traveling. It's learning how to live somewhere new, build a routine, and turn unfamiliar places into a second home.</p>
+    </div>
+
+    <section>
+      <div class="intro">
+        <h2>Feel like a local, even when you're far from home.</h2>
+        <p>From grocery shopping and managing expenses to making new friends and learning another language, everyday life abroad brings its own challenges. The right digital tools can help students adjust more comfortably and independently.</p>
+        <p>These apps are useful for building a routine, staying connected, and making student life in Europe more manageable. Availability, pricing, and features may vary by location.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="category">LANGUAGE LEARNING</div>
+          <h3>Duolingo</h3>
+          <p>Practice vocabulary and basic language skills through short, interactive lessons. A useful way to build confidence before and during your semester abroad.</p>
+          <p><strong>Student tip:</strong> Learn phrases for ordering food, asking directions, and introducing yourself.</p>
+          <a href="https://www.duolingo.com/" target="_blank" rel="noopener noreferrer">Visit Duolingo →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">EVERYDAY COMMUNICATION</div>
+          <h3>WhatsApp</h3>
+          <p>Stay connected with classmates, roommates, local friends, and family through messages, group chats, and internet-based calls.</p>
+          <p><strong>Student tip:</strong> Create group chats for your classes, apartment, and weekend travel plans.</p>
+          <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">Visit WhatsApp →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">BUDGETING</div>
+          <h3>Splitwise</h3>
+          <p>Keep track of shared expenses with roommates and friends, including groceries, meals, and group travel costs.</p>
+          <p><strong>Student tip:</strong> Record expenses as they happen so group spending stays organized.</p>
+          <a href="https://www.splitwise.com/" target="_blank" rel="noopener noreferrer">Visit Splitwise →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">CURRENCY & PAYMENTS</div>
+          <h3>Wise</h3>
+          <p>Explore international currency conversion and transfer services in eligible locations, with fee information available before transactions.</p>
+          <p><strong>Student tip:</strong> Compare exchange costs with your existing bank and confirm account eligibility.</p>
+          <a href="https://wise.com/" target="_blank" rel="noopener noreferrer">Visit Wise →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">FOOD SAVINGS</div>
+          <h3>Too Good To Go</h3>
+          <p>Find participating businesses offering surplus food at reduced prices through the app, depending on availability.</p>
+          <p><strong>Student tip:</strong> Look for participating bakeries and cafes near your university or apartment.</p>
+          <a href="https://www.toogoodtogo.com/" target="_blank" rel="noopener noreferrer">Visit Too Good To Go →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">FOOD DELIVERY</div>
+          <h3>Deliveroo</h3>
+          <p>Order meals and other available products from participating businesses in supported cities.</p>
+          <p><strong>Student tip:</strong> Check delivery fees and service coverage before ordering.</p>
+          <a href="https://deliveroo.com/" target="_blank" rel="noopener noreferrer">Visit Deliveroo →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">LOCAL DINING</div>
+          <h3>OpenTable</h3>
+          <p>Discover participating restaurants, explore dining options, and make reservations where the service is available.</p>
+          <p><strong>Student tip:</strong> Research local restaurants for birthdays, group dinners, and special occasions.</p>
+          <a href="https://www.opentable.com/" target="_blank" rel="noopener noreferrer">Visit OpenTable →</a>
+        </article>
+
+        <article class="card">
+          <div class="category">NAVIGATION</div>
+          <h3>Google Maps</h3>
+          <p>Navigate your host city, discover nearby businesses, and save frequently visited locations such as your university, apartment, and favorite cafe.</p>
+          <p><strong>Student tip:</strong> Save your home address and key campus locations before your first day of classes.</p>
+          <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Visit Google Maps →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="routine">
+      <div class="eyebrow">A little guidance goes a long way</div>
+      <h2>Your first week abroad.</h2>
+      <p>Adjusting to a new country takes time. Start with a few simple steps that can help your new city feel more familiar.</p>
+      <div class="routine-grid">
+        <article class="routine-item">
+          <span>DAY 01–02</span>
+          <h3>Find your footing.</h3>
+          <p>Explore your neighborhood, locate your university, learn nearby public transit routes, and save essential addresses.</p>
+        </article>
+        <article class="routine-item">
+          <span>DAY 03–04</span>
+          <h3>Build your routine.</h3>
+          <p>Find your favorite grocery store, discover local cafes, understand payment options, and practice everyday phrases.</p>
+        </article>
+        <article class="routine-item">
+          <span>DAY 05–07</span>
+          <h3>Start exploring.</h3>
+          <p>Connect with classmates, visit somewhere new, and plan your first weekend adventure once you're comfortable with the essentials.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">More than a semester</div>
+      <h2>Make somewhere unfamiliar feel like yours.</h2>
+      <p>Studying abroad is an opportunity to grow beyond your comfort zone. There will be wrong turns, unfamiliar words, unexpected changes, and moments when everything feels new. That's part of the experience.</p>
+      <p>Technology should make navigating those moments easier, not replace the joy of discovering things for yourself. Use these resources as a starting point, then put your phone away, explore your neighborhood, and experience the culture around you.</p>
+    </section>
+
+    <section class="cta">
+      <div class="eyebrow">Your story is just beginning</div>
+      <h2>Where will you go next?</h2>
+      <p>Turn the cities you visit into a personal collection of memories with your ELSEWHERE interactive travel journal.</p>
+      <a class="button" href="index.html#journal">Start Your Travel Journal</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ELSEWHERE.</strong>
+    <p>Make the world feel a little more like home.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="best-apps-studying-abroad-europe.html">Study Abroad Apps</a>
+      <a href="best-travel-apps-europe.html">Travel Apps</a>
+      <a href="apps-students-studying-abroad.html">Student Essentials</a>
+    </div>
+    <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </footer>
+</body>
+</html>

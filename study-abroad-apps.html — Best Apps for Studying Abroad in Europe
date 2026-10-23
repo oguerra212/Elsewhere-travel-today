@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the best apps for studying abroad in Europe, including transportation, communication, flights, and accommodation.">
+  <title>Best Apps for Studying Abroad in Europe | ELSEWHERE</title>
+  <style>
+    :root { --cream:#f6f3ec; --ink:#26352e; --sand:#e7dfd0; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:Arial,sans-serif; line-height:1.7; }
+    .notice { background:var(--ink); color:white; text-align:center; padding:12px 18px; font-size:12px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 7%; border-bottom:1px solid #ddd7cc; }
+    .logo { font-size:25px; font-weight:900; letter-spacing:3px; text-decoration:none; color:var(--ink); }
+    nav { display:flex; gap:18px; flex-wrap:wrap; }
+    nav a { color:var(--ink); text-decoration:none; font-size:13px; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:1100px; margin:auto; padding:65px 7%; }
+    .eyebrow { font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold; }
+    h1 { font-family:Georgia,serif; font-size:clamp(42px,7vw,78px); line-height:1.1; }
+    h2 { font-family:Georgia,serif; font-size:35px; }
+    .intro { font-size:19px; max-width:750px; }
+    .feature { padding:32px 0; border-bottom:1px solid #d6d0c5; }
+    .feature h3 { font-size:24px; margin-bottom:8px; }
+    .tag { display:inline-block; background:var(--sand); padding:5px 12px; font-size:12px; border-radius:20px; }
+    .tip { background:var(--sand); padding:30px; margin:40px 0; }
+    .button { display:inline-block; background:var(--ink); color:white; text-decoration:none; padding:14px 25px; margin-top:15px; }
+    footer { background:var(--ink); color:white; text-align:center; padding:40px 7%; }
+    footer a { color:white; margin:0 9px; }
+    footer .notice { margin-top:25px; border-top:1px solid #718075; }
+    @media(max-width:700px) {
+      header { flex-direction:column; text-align:center; }
+      nav { justify-content:center; }
+      main { padding:45px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  <header>
+    <a class="logo" href="index.html">ELSEWHERE.</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="study-abroad-apps.html">Study Abroad Apps</a>
+      <a href="europe-travel-apps.html">Travel Toolkit</a>
+      <a href="student-apps.html">Student Guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">The ELSEWHERE guide / 01</div>
+    <h1>Best Apps for Studying Abroad in Europe</h1>
+    <p class="intro">A new country, a new routine, and a whole continent waiting to be explored. Before you board your flight, download the apps that can make your study-abroad experience easier.</p>
+
+    <h2>Your semester abroad, simplified.</h2>
+    <p>Arriving in Europe for the first time can feel overwhelming. Different transportation systems, unfamiliar streets, and new ways of communicating can turn simple tasks into unexpected challenges. These essential apps help students settle in, travel confidently, and make the most of their time abroad.</p>
+
+    <div class="feature">
+      <span class="tag">Transportation</span>
+      <h3>01. Omio — Get from city to city</h3>
+      <p>Omio helps travelers compare trains, buses, and flights across many European routes. It's useful when you're planning a weekend trip and want to compare different ways to reach your destination.</p>
+      <p><strong>ELSEWHERE tip:</strong> Compare both travel time and total cost. The cheapest ticket isn't always the most convenient option.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Communication</span>
+      <h3>02. WhatsApp — Stay connected</h3>
+      <p>WhatsApp is widely used for messaging and group chats throughout Europe. It makes coordinating with classmates, roommates, and new friends simple over an internet connection.</p>
+      <p><strong>ELSEWHERE tip:</strong> Set up your account before leaving home so you can easily contact people when you arrive.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Flights</span>
+      <h3>03. Skyscanner — Find your next getaway</h3>
+      <p>Skyscanner compares flight options from different airlines and travel providers. Flexible destination and date searches can help students discover trips that fit their budgets.</p>
+      <p><strong>ELSEWHERE tip:</strong> Always review baggage fees and airport locations before booking.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Accommodation</span>
+      <h3>04. Hostelworld — Find somewhere to stay</h3>
+      <p>Hostelworld helps travelers discover hostels, compare locations, and review accommodation options. Hostels can be a practical choice for students traveling with friends or exploring a new city.</p>
+      <p><strong>ELSEWHERE tip:</strong> Look closely at recent reviews, cancellation policies, and transportation access.</p>
+    </div>
+
+    <div class="feature">
+      <span class="tag">Navigation</span>
+      <h3>05. Google Maps — Navigate with confidence</h3>
+      <p>Google Maps can help you find walking routes, public transportation, restaurants, and important landmarks. Saved locations make it easier to return to places you've discovered.</p>
+      <p><strong>ELSEWHERE tip:</strong> Download supported offline maps before visiting an unfamiliar destination.</p>
+    </div>
+
+    <div class="tip">
+      <div class="eyebrow">Before you take off</div>
+      <h2>A little preparation goes a long way.</h2>
+      <p>Download essential apps, check your mobile data options, save your accommodation address, and keep digital copies of important travel information. You don't need to plan every moment, but a few tools can make spontaneous adventures much easier.</p>
+    </div>
+
+    <h2>Ready to explore beyond your host city?</h2>
+    <p>Now that you have your everyday essentials, discover the apps that can help you travel across Europe.</p>
+    <a class="button" href="europe-travel-apps.html">Explore the Travel Toolkit &rarr;</a>
+  </main>
+
+  <footer>
+    <strong>ELSEWHERE.</strong>
+    <p>Go further. Feel more. Remember everything.</p>
+    <a href="index.html">Home</a>
+    <a href="study-abroad-apps.html">Study Abroad Apps</a>
+    <a href="europe-travel-apps.html">Travel Toolkit</a>
+    <a href="student-apps.html">Student Guide</a>
+    <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </footer>
+</body>
+</html>

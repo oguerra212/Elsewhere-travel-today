@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://oguerra212.github.io/Elsewhere-travel-today/sitemap.xml
